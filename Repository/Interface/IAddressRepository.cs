@@ -6,7 +6,7 @@ using System.Text;
 namespace Repository.Interface
 {
    public interface IAddressRepository
-    {
+    {         
         public bool AddAddress(AddressModel addressDetails);
 
         public bool EditAddress(AddressModel addressDetails);

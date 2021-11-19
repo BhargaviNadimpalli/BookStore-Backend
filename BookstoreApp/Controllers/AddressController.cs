@@ -95,7 +95,7 @@ namespace BookstoreApp.Controllers
             {
                 var result = this.manager.RemoveUserAddress(addressId);
                 if (result)
-                {
+                {        
 
                     return this.Ok(new ResponseModel<string>() { Status = true, Message = "Removed User Address Successfully !" });
                 }

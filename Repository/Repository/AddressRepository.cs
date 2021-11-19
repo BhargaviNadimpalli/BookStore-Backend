@@ -140,7 +140,7 @@ namespace Repository.Repository
             sqlConnection = new SqlConnection(this.Configuration.GetConnectionString("UserDbConnection"));
             using (sqlConnection)
                 try
-                {
+                {              
 
                     SqlCommand sqlCommand = new SqlCommand("RemoveUserAddress", sqlConnection);
 
