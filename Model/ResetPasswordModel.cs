@@ -15,3 +15,4 @@ namespace Model
         public string NewPassword { get; set; }
     }
 }
+        

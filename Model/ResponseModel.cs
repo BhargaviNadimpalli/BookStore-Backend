@@ -11,3 +11,4 @@ namespace Model
         public T Data { get; set; }
     }
 }
+        
