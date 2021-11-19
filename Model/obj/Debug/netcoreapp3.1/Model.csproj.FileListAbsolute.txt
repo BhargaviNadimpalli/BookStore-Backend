@@ -1,0 +1,13 @@
+C:\Users\HP\BookStore_Backend\BookStore App\BookstoreApp\Model\bin\Debug\netcoreapp3.1\Model.exe
+C:\Users\HP\BookStore_Backend\BookStore App\BookstoreApp\Model\bin\Debug\netcoreapp3.1\Model.deps.json
+C:\Users\HP\BookStore_Backend\BookStore App\BookstoreApp\Model\bin\Debug\netcoreapp3.1\Model.runtimeconfig.json
+C:\Users\HP\BookStore_Backend\BookStore App\BookstoreApp\Model\bin\Debug\netcoreapp3.1\Model.runtimeconfig.dev.json
+C:\Users\HP\BookStore_Backend\BookStore App\BookstoreApp\Model\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\HP\BookStore_Backend\BookStore App\BookstoreApp\Model\bin\Debug\netcoreapp3.1\Model.pdb
+C:\Users\HP\BookStore_Backend\BookStore App\BookstoreApp\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfoInputs.cache
+C:\Users\HP\BookStore_Backend\BookStore App\BookstoreApp\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfo.cs
+C:\Users\HP\BookStore_Backend\BookStore App\BookstoreApp\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
+C:\Users\HP\BookStore_Backend\BookStore App\BookstoreApp\Model\obj\Debug\netcoreapp3.1\Model.dll
+C:\Users\HP\BookStore_Backend\BookStore App\BookstoreApp\Model\obj\Debug\netcoreapp3.1\Model.pdb
+C:\Users\HP\BookStore_Backend\BookStore App\BookstoreApp\Model\obj\Debug\netcoreapp3.1\Model.genruntimeconfig.cache
+C:\Users\HP\BookStore_Backend\BookStore App\BookstoreApp\Model\obj\Debug\netcoreapp3.1\Model.csproj.AssemblyReference.cache
