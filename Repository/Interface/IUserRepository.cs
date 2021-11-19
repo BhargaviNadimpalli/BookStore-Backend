@@ -12,7 +12,7 @@ namespace Repository.Interface
         public string Login(LoginModel login);
 
 
-        public string GenerateToken(string userName);
+        public string GenerateToken(string userName);     
 
         public DataResponseModel ForgetPassword(string Email);
 

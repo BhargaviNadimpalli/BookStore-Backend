@@ -16,7 +16,7 @@ namespace Repository.Repository
         {
             this.Configuration = configuration;
         }
-        SqlConnection sqlConnection;
+        SqlConnection sqlConnection;     
         public bool AddToCart(CartModel details)
         {
             sqlConnection = new SqlConnection(this.Configuration.GetConnectionString("UserDbConnection"));

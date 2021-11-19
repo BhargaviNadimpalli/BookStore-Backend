@@ -12,7 +12,7 @@ namespace Repository.Interface
         public bool EditAddress(AddressModel addressDetails);
 
         public List<AddressModel> GetUserAddress(int userId);
-
+               
         public bool RemoveUserAddress(int addressId);
 
     }

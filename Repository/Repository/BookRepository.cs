@@ -269,7 +269,7 @@ namespace Repository.Repository
 
                         
                 sqlCommand.Parameters.AddWithValue("@bookid", bookid);
-                List<FeedBackModel> feedbackList = new List<FeedBackModel>();
+                List<FeedBackModel> feedbackList = new List<FeedBackModel>();       
                 SqlDataReader reader = sqlCommand.ExecuteReader();
                 if (reader.HasRows)
                 {

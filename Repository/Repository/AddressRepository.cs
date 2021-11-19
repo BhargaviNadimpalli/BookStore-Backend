@@ -152,7 +152,7 @@ namespace Repository.Repository
                     sqlCommand.Parameters.AddWithValue("@AddressId", addressId);
 
 
-                    sqlCommand.Parameters.Add("@result", SqlDbType.Int);
+                    sqlCommand.Parameters.Add("@result", SqlDbType.Int);       
                     sqlCommand.Parameters["@result"].Direction = ParameterDirection.Output;
                     sqlCommand.ExecuteNonQuery();
 

@@ -13,7 +13,7 @@ namespace Repository.Interface
 
         public bool EditBook(BookModel bookmodel);
         public bool RemoveBook(int bookId);
-
+                 
         public List<BookModel> GetAllBooks();
 
         public bool AddCustomerFeedBack(FeedBackModel feedbackmodel);

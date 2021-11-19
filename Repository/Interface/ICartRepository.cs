@@ -11,7 +11,7 @@ namespace Repository.Interface
 
        public List<CartModel> GetCart(int userId);
 
-        public bool UpdateCart(CartModel details);
+        public bool UpdateCart(CartModel details);     
 
         public bool DeleteCart(int cartId);
 
