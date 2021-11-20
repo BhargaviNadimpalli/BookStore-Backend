@@ -98,34 +98,39 @@ namespace Repository.Repository
 
                 try
                 {
-                    SqlCommand sqlCommand = new SqlCommand("GetWishlist", sqlConnection);
+                    SqlCommand sqlCommand = new SqlCommand("GetWishList", sqlConnection);
 
                     sqlCommand.CommandType = System.Data.CommandType.StoredProcedure;
 
                     sqlConnection.Open();
-                    sqlCommand.Parameters.AddWithValue("@userId", userId);
-                    List<WishlistModel> wishList = new List<WishlistModel>();
-                    BookModel booksModel = new BookModel();
-                    WishlistModel wishListModel = new WishlistModel();
+                    sqlCommand.Parameters.AddWithValue("@UserId", userId);
                     SqlDataReader reader = sqlCommand.ExecuteReader();
 
-                    if (reader.Read())
+                    if (reader.HasRows)
                     {
-                             
+                        List<WishlistModel> wishList = new List<WishlistModel>();
+                        while (reader.Read())
+                        {
+                            BookModel booksModel = new BookModel();
 
-                        wishListModel.BookId = Convert.ToInt32(reader["BookId"]);
-                        booksModel.AuthorName = reader["AuthorName"].ToString();
-                        booksModel.BookName = reader["BookName"].ToString();
-                        booksModel.Price = Convert.ToInt32(reader["Price"]);
-                        booksModel.Image = reader["Image"].ToString();
-                        booksModel.OriginalPrice = Convert.ToInt32(reader["OriginalPrice"]);
-                        wishListModel.WishListId = Convert.ToInt32(reader["WishListId"]);
-                        wishListModel.Books = booksModel;
+                            WishlistModel wishListModel = new WishlistModel();
 
-
+                            wishListModel.BookId = Convert.ToInt32(reader["Id"]);
+                            booksModel.AuthorName = reader["AuthorName"].ToString();
+                            booksModel.BookName = reader["BookName"].ToString();
+                            booksModel.Price = Convert.ToInt32(reader["Price"]);
+                            booksModel.Image = reader["Image"].ToString();
+                            booksModel.OriginalPrice = Convert.ToInt32(reader["OriginalPrice"]);
+                            wishListModel.WishListId = Convert.ToInt32(reader["WishListId"]);
+                            wishListModel.Books = booksModel;
+                            wishList.Add(wishListModel);
+                        }
+                        return wishList;
                     }
-                    return wishList;
-
+                    else
+                    {
+                        return null;
+                    }
                 }
                 catch (Exception e)
                 {
