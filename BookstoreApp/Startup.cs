@@ -47,6 +47,9 @@ namespace BookstoreApp
             services.AddTransient<IAddressRepository, AddressRepository>();
             services.AddTransient<IAddressManager, AddressManager>();
 
+            services.AddTransient<IOrderRepository, OrderRepository>();
+            services.AddTransient<IOrderManager, OrderManager>();
+
             services.AddCors(options =>
             {
                 options.AddPolicy(name: "AllowAllHeader",
