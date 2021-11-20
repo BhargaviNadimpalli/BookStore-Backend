@@ -25,5 +25,17 @@ namespace Manager.Manager
                 throw new Exception(ex.Message);
             }
         }
+
+        public List<OrderModel> GetOrderList(int userId)
+        {
+            try
+            {
+                return this.repository.GetOrderList(userId);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

@@ -8,5 +8,7 @@ namespace Manager.Interface
     public interface IOrderManager
     {
         public bool AddOrder(List<CartModel> orderdetails);
+
+        public List<OrderModel> GetOrderList(int userId);
     }
 }

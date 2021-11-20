@@ -8,5 +8,7 @@ namespace Repository.Interface
    public interface IOrderRepository
     {
         public bool AddOrder(List<CartModel> orderdetails);
+
+        public List<OrderModel> GetOrderList(int userId);
     }
 }

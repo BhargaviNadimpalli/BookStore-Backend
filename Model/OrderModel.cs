@@ -7,6 +7,7 @@ namespace Model
 {
    public class OrderModel
     {
+        public int OrderId { get; set; }
         public int CartID { get; set; }
         public int UserId { get; set; }
         public int BookID { get; set; }
